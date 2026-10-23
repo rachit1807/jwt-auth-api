@@ -3,7 +3,7 @@
   <h1>Crimson Identity</h1>
   <p><strong>Secure access. Thoughtfully designed.</strong></p>
   <p>A complete JWT authentication workspace with a vivid red visual identity,<br>orbital particle motion, responsive layouts, and light & dark themes.</p>
-  <p><a href="#getting-started">Get started</a> · <a href="#api-reference">API reference</a> · <a href="#security">Security</a></p>
+  <p><a href="https://crimson-identity-rachit.onrender.com">Live application</a> · <a href="#getting-started">Get started</a> · <a href="#api-reference">API reference</a> · <a href="#security">Security</a></p>
   <p>
     <img src="https://skillicons.dev/icons?i=js,nodejs,express,postgres,html,css,git,github,vscode&theme=dark" alt="JavaScript, Node.js, Express, PostgreSQL, HTML, CSS, Git, GitHub, VS Code">
   </p>
@@ -141,6 +141,10 @@ server.js                       Configuration, storage initialization and lifecy
 ## Deployment
 
 Deploy this Node service with build command `npm ci` and start command `npm start`. Set a random `JWT_SECRET`, `NODE_ENV=production`, and a durable PostgreSQL `DATABASE_URL`. Use `/api/health` for health checks. Serve through HTTPS for production cookies. The same service hosts both the interface and API, so no separate frontend deployment or CORS configuration is needed.
+
+### Current hosting
+
+The web app runs on Render in Singapore. Accounts use a dedicated Neon PostgreSQL 18 project, separate from every other application. The production branch has **no scheduled expiry**. Neon free-plan quotas still apply; keep backups and monitor usage. The free Render web service may sleep during inactivity and take longer on its first request.
 
 ## Author
 
